@@ -1,0 +1,523 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #efefef;
+}
+
+#page {
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 120px;
+}
+
+header {
+  z-index: 1;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+div.navTop {
+  margin: auto;
+  max-width: 1100px;
+  display: flex;
+  justify-content: flex-end;
+  height: 45px;
+}
+
+div.navTop > a {
+  margin-right: 25px;
+  width: 130px;
+  text-align: center;
+  font-size: 14px;
+}
+
+a.navTop {
+  color: black;
+  align-self: center;
+}
+
+a.navTopBlue {
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  background-color: #386f93;
+  border-radius: 2px;
+}
+
+.headerLine {
+  margin: 0;
+  border: 1px solid #efefef;
+  color: #efefef;
+}
+
+div.navBottom {
+  margin: auto;
+  max-width: 1100px;
+  display: flex;
+  justify-content: flex-end;
+  height: 75px;
+}
+
+img.navBottom {
+  position: relative;
+  margin-right: auto;
+  width: 85px;
+}
+
+div.navBottom > a {
+  height: 70px;
+  line-height: 70px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 30px;
+}
+
+div.navBottom > a:hover {
+  color: steelblue;
+  border-bottom: 3px solid orange;
+}
+
+div.berry {
+  position: relative;
+}
+
+div.berryText {
+  position: absolute;
+  top: 80px;
+  left: 55%;
+  width: 500px;
+}
+
+h2.berryText {
+  letter-spacing: .1em;
+}
+
+h1.berryText {
+  margin: 20px 0;
+  font-size: 48px;
+}
+
+p.berryText {
+  font-size: 15px;
+  letter-spacing: .15em;
+  line-height: 1.4em;
+}
+
+a.berry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  height: 45px;
+  width: 350px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .1em;
+  background-color: dodgerblue;
+  border-radius: 2px;
+}
+
+a.berry:hover {
+  background-color: steelblue;
+}
+
+div.featured {
+  background-image: url('images/brick.png');
+  height: 260px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a.featured {
+  min-width: 150px;
+  display: block;
+  text-align: center;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+a.featured > img {
+  border-radius: 50%;
+  width: 130px;
+  margin-bottom: 15px;
+}
+
+div.thirst {
+  position: relative;
+}
+
+div.thirstText {
+  position: absolute;
+  top: 80px;
+  right: 55%;
+  width: 500px;
+}
+
+h2.thirst {
+  letter-spacing: .1em;
+}
+
+h1.thirst {
+  margin: 20px 0;
+  font-size: 48px;
+}
+
+p.thirst {
+  font-size: 15px;
+  letter-spacing: .15em;
+  line-height: 1.4em;
+}
+
+a.thirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  height: 45px;
+  width: 350px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .1em;
+  background-color: dodgerblue;
+  border-radius: 2px;
+}
+
+a.thirst:hover {
+  background-color: steelblue;
+}
+
+div.offers {
+  position: relative;
+}
+
+div.offersText {
+  position: absolute;
+  top: 60px;
+  left: 55%;
+  width: 500px;
+  color: white;
+}
+
+h1.offers {
+  margin: 20px 0;
+  font-size: 48px;
+}
+
+p.offers {
+  font-size: 15px;
+  letter-spacing: .15em;
+  line-height: 1.4em;
+}
+
+a.offers > img {
+  width: 25%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+p.offersSmall {
+  font-size: 14px;
+}
+
+div.think {
+  position: relative;
+}
+
+div.thinkText {
+  position: absolute;
+  top: 60px;
+  right: 55%;
+  width: 500px;
+  color: white;
+}
+
+h1.think {
+  margin: 20px 0;
+  font-size: 48px;
+}
+
+p.think {
+  font-size: 15px;
+  letter-spacing: .15em;
+  line-height: 1.4em;
+}
+
+a.think {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  height: 45px;
+  width: 350px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .1em;
+  background-color: dodgerblue;
+  border-radius: 2px;
+}
+
+a.think:hover {
+  background-color: steelblue;
+}
+
+p.thinkSmall {
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+div.fresh {
+  position: relative;
+}
+
+div.freshText {
+  position: absolute;
+  top: 60px;
+  left: 55%;
+  width: 500px;
+  color: black;
+}
+
+h1.fresh {
+  width: 400px;
+  margin: 20px 0;
+  font-size: 48px;
+}
+
+p.fresh {
+  font-size: 15px;
+  letter-spacing: .15em;
+  line-height: 1.4em;
+}
+
+a.freshButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: 45px;
+  width: 350px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .1em;
+  background-color: dodgerblue;
+  border-radius: 2px;
+}
+
+a.freshButton:hover {
+  background-color: steelblue;
+}
+
+a.fresh > img {
+  width: 25%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+p.freshSmall {
+  font-size: 13px;
+}
+
+div.see {
+  display: flex;
+}
+
+img.see {
+  height: 450px;
+  width: 50%;
+}
+
+div.seeText {
+  background-color: white;
+  padding: 50px 120px 0 70px;
+}
+
+h1.see {
+  width: 400px;
+  margin: 20px 0;
+  font-size: 48px;
+}
+
+p.see {
+  font-size: 15px;
+  letter-spacing: .15em;
+  line-height: 1.4em;
+}
+
+a.see {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: 45px;
+  width: 350px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .1em;
+  background-color: dodgerblue;
+  border-radius: 2px;
+}
+
+a.see:hover {
+  background-color: steelblue;
+}
+
+div.book {
+  position: relative;
+}
+
+div.bookText {
+  position: absolute;
+  top: 60px;
+  right: 55%;
+  width: 500px;
+  color: white;
+}
+
+h1.book {
+  margin: 20px 0;
+  font-size: 48px;
+}
+
+p.book {
+  font-size: 15px;
+  letter-spacing: .15em;
+  line-height: 1.4em;
+  margin-bottom: 40px;
+}
+
+a.book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  height: 45px;
+  width: 350px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .1em;
+  background-color: dodgerblue;
+  border-radius: 2px;
+}
+
+a.book:hover {
+  background-color: steelblue;
+}
+
+p.bookSmall {
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+div.footerTop, div.footerMid {
+  display: flex;
+  height: 80px;
+  background-color: #333333;
+  padding: 0 20%;
+}
+
+div.footerTop {
+  align-items: center;
+}
+
+a.footerTop, a.footerMid {
+  color: white;
+  margin-right: 50px;
+}
+
+div.footerTop > a:hover, div.footerMid > a:hover {
+  color: grey;
+}
+
+a.footerTop {
+  font-weight: bold;
+}
+
+a.footerMid {
+  font-size: 13px;
+}
+
+div.footerBottom {
+  font-size: 13px;
+  height: 60px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  line-height: 60px;
+}
+
+div.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  margin-left: auto;
+}
+
+a.icons {
+  color: white;
+}
+
+a.icons:hover {
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+.short {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+
+  div.berryText, div.offersText, div.freshText {
+    left: 45%;
+  }
+
+  div.thirstText, div.thinkText, div.bookText {
+    right: 45%;
+  }
+
+  div.navTop, div.navBottom {
+    width: 900px;
+  }
+
+  .short {
+    display: inline-block;
+  }
+
+  .long {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  div.navTop, div.navBottom {
+    width: 600px;
+  }
+
+  div.berryText, div.thirstText, div.offersText, div.thinkText, div.freshText, div.bookText {
+    position: static;
+    margin: auto;
+    width: 80%;
+  }
+
+  img.thirst, img.think, img.book {
+    float: right;
+  }
+
+  img.book {
+    height: 525px;
+  }
+
+  div.offersText, div.thinkText, div.bookText {
+    color: black;
+  }
+}
+
