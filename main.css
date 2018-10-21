@@ -1,118 +1,147 @@
 body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #efefef;
+	margin-top: 129px;
+	font-family: 'Roboto', sans-serif;
 }
 
-#page {
-  max-width: 1500px;
-  margin: auto;
-  margin-top: 120px;
+nav.navbar {
+	background-color: white;
+	font-weight: bold;
+	color: black;
+	min-width: 450px;
 }
 
-header {
-  z-index: 1;
-  background-color: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
+div.navTop, div.navBottom {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 div.navTop {
-  margin: auto;
-  max-width: 1100px;
-  display: flex;
-  justify-content: flex-end;
-  height: 45px;
-}
-
-div.navTop > a {
-  margin-right: 25px;
-  width: 130px;
-  text-align: center;
-  font-size: 14px;
-}
-
-a.navTop {
-  color: black;
-  align-self: center;
-}
-
-a.navTopBlue {
-  height: 40px;
-  line-height: 40px;
-  color: white;
-  background-color: #386f93;
-  border-radius: 2px;
-}
-
-.headerLine {
-  margin: 0;
-  border: 1px solid #efefef;
-  color: #efefef;
+	margin-top: 5px;
+	height: 50px;
+	font-size: 14px;
+	border-bottom: 2px solid #efefef;
 }
 
 div.navBottom {
-  margin: auto;
-  max-width: 1100px;
-  display: flex;
-  justify-content: flex-end;
-  height: 75px;
+	font-size: 20px;
+}
+
+.navTopLink, a.navBottom {
+	color: black;
+}
+
+.navTopButton {
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
 }
 
 img.navBottom {
-  position: relative;
-  margin-right: auto;
-  width: 85px;
+	width: 80px;
+	margin-right: auto;
 }
 
-div.navBottom > a {
-  height: 70px;
-  line-height: 70px;
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0 30px;
+a.navBottom:hover {
+	color: steelblue;
+	border-bottom: 3px solid orange;
 }
 
-div.navBottom > a:hover {
-  color: steelblue;
-  border-bottom: 3px solid orange;
+div.berry, div.thirst, div.offers, div.think, div.fresh, div.book, div.helping {
+	background-repeat: no-repeat;
+	background-position: 50%;
+	height: 440px;
+	max-width: 1200px;
 }
 
 div.berry {
-  position: relative;
+	background-image: url('images/berryburst.png');
+}
+
+div.thirst {
+	background-image: url('images/thirst.png');
+}
+
+div.offers {
+	background-image: url('images/app.png');
+}
+
+div.think {
+	background-image: url('images/doordash.png');
+}
+
+div.fresh {
+	background-image: url('images/now.png');
+}
+
+div.book {
+	background-image: url('images/fresh.png');
+}
+
+div.helping {
+	background-image: url('images/home.png');
 }
 
 div.berryText {
-  position: absolute;
-  top: 80px;
-  left: 55%;
-  width: 500px;
+	margin-left: 25px;
+	max-width: 500px;
 }
 
-h2.berryText {
+div.thirstText { 
+	margin-left: 25px;
+	max-width: 500px;
+}
+
+div.offersText {
+	margin-left: 25px;
+	max-width: 500px;
+	color: white;
+}
+
+div.thinkText {
+	margin-left: 25px;
+	max-width: 500px;
+	color: white;
+}
+
+div.freshText {
+	margin-left: 25px;
+	max-width: 500px;
+}
+
+div.bookText {
+	margin-left: 25px;
+	max-width: 500px;
+}
+
+div.helpingText {
+	margin-left: 25px;
+	max-width: 500px;
+}
+
+h1.textR {
+  margin: 50px 0;
+  font-size: 20px;
   letter-spacing: .1em;
 }
 
-h1.berryText {
-  margin: 20px 0;
+h2.textR { 
   font-size: 48px;
 }
 
-p.berryText {
+p.textR {
   font-size: 15px;
   letter-spacing: .15em;
   line-height: 1.4em;
 }
 
-a.berry {
+a.textR {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 25px;
   height: 45px;
-  width: 350px;
+  max-width: 350px;
   color: white;
   font-weight: bold;
   letter-spacing: .1em;
@@ -120,17 +149,49 @@ a.berry {
   border-radius: 2px;
 }
 
-a.berry:hover {
-  background-color: steelblue;
+h1.textL {
+  margin: 50px 0;
+  font-size: 20px;
+  letter-spacing: .1em;
+}
+
+h2.textL { 
+  font-size: 48px;
+}
+
+p.textL {
+  font-size: 15px;
+  letter-spacing: .15em;
+  line-height: 1.4em;
+}
+
+a.textL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  height: 45px;
+  max-width: 350px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .1em;
+  background-color: dodgerblue;
+  border-radius: 2px;
 }
 
 div.featured {
-  background-image: url('images/brick.png');
-  height: 260px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	max-width: 1200px;
+  	background-image: url('images/brick.png');
+ 	height: 260px;
+ 	display: flex;
+ 	justify-content: space-around;
+ 	align-items: center;
+}
+
+a.featured > img {
+  border-radius: 50%;
+  width: 130px;
+  margin-bottom: 15px;
 }
 
 a.featured {
@@ -142,287 +203,70 @@ a.featured {
   font-weight: bold;
 }
 
-a.featured > img {
-  border-radius: 50%;
-  width: 130px;
-  margin-bottom: 15px;
+img.offers, img.fresh {
+	height: 40px;
+	margin: 25px 0;
 }
 
-div.thirst {
-  position: relative;
+img.helping {
+	margin-top: 25px;
+	width: 150px;
 }
 
-div.thirstText {
-  position: absolute;
-  top: 80px;
-  right: 55%;
-  width: 500px;
+p.thinkSmall, p.bookSmall {
+	margin-top: 5px;
 }
 
-h2.thirst {
-  letter-spacing: .1em;
+@media (max-width: 768px) {
+	div.berry, div.thirst, div.offers, div.think, div.fresh, div.book, div.helping {
+		background-image: none;
+	}
+
+	div.offersText, div.thinkText {
+		color: black;
+	}
+
+	div.berryText, div.offersText, div.freshText {
+		float: none !important;
+	}
+
+	div.navBottom {
+		justify-content: center;
+	}
+
+	a.navBottom {
+		margin-top: 50px;
+		font-size: 18px;
+	}
+
+	body {
+		margin-top: 60px;
+	}
+
+	nav.navbar {
+		min-width: auto;
+	}
 }
 
-h1.thirst {
-  margin: 20px 0;
-  font-size: 48px;
-}
-
-p.thirst {
-  font-size: 15px;
-  letter-spacing: .15em;
-  line-height: 1.4em;
-}
-
-a.thirst {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
-  height: 45px;
-  width: 350px;
-  color: white;
-  font-weight: bold;
-  letter-spacing: .1em;
-  background-color: dodgerblue;
-  border-radius: 2px;
-}
-
-a.thirst:hover {
-  background-color: steelblue;
-}
-
-div.offers {
-  position: relative;
-}
-
-div.offersText {
-  position: absolute;
-  top: 60px;
-  left: 55%;
-  width: 500px;
-  color: white;
-}
-
-h1.offers {
-  margin: 20px 0;
-  font-size: 48px;
-}
-
-p.offers {
-  font-size: 15px;
-  letter-spacing: .15em;
-  line-height: 1.4em;
-}
-
-a.offers > img {
-  width: 25%;
-  margin-top: 60px;
-  margin-bottom: 40px;
-}
-
-p.offersSmall {
-  font-size: 14px;
-}
-
-div.think {
-  position: relative;
-}
-
-div.thinkText {
-  position: absolute;
-  top: 60px;
-  right: 55%;
-  width: 500px;
-  color: white;
-}
-
-h1.think {
-  margin: 20px 0;
-  font-size: 48px;
-}
-
-p.think {
-  font-size: 15px;
-  letter-spacing: .15em;
-  line-height: 1.4em;
-}
-
-a.think {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
-  height: 45px;
-  width: 350px;
-  color: white;
-  font-weight: bold;
-  letter-spacing: .1em;
-  background-color: dodgerblue;
-  border-radius: 2px;
-}
-
-a.think:hover {
-  background-color: steelblue;
-}
-
-p.thinkSmall {
-  margin-top: 30px;
-  font-size: 13px;
-}
-
-div.fresh {
-  position: relative;
-}
-
-div.freshText {
-  position: absolute;
-  top: 60px;
-  left: 55%;
-  width: 500px;
-  color: black;
-}
-
-h1.fresh {
-  width: 400px;
-  margin: 20px 0;
-  font-size: 48px;
-}
-
-p.fresh {
-  font-size: 15px;
-  letter-spacing: .15em;
-  line-height: 1.4em;
-}
-
-a.freshButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  height: 45px;
-  width: 350px;
-  color: white;
-  font-weight: bold;
-  letter-spacing: .1em;
-  background-color: dodgerblue;
-  border-radius: 2px;
-}
-
-a.freshButton:hover {
-  background-color: steelblue;
-}
-
-a.fresh > img {
-  width: 25%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-p.freshSmall {
-  font-size: 13px;
-}
-
-div.see {
-  display: flex;
-}
-
-img.see {
-  height: 450px;
-  width: 50%;
-}
-
-div.seeText {
-  background-color: white;
-  padding: 50px 120px 0 70px;
-}
-
-h1.see {
-  width: 400px;
-  margin: 20px 0;
-  font-size: 48px;
-}
-
-p.see {
-  font-size: 15px;
-  letter-spacing: .15em;
-  line-height: 1.4em;
-}
-
-a.see {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  height: 45px;
-  width: 350px;
-  color: white;
-  font-weight: bold;
-  letter-spacing: .1em;
-  background-color: dodgerblue;
-  border-radius: 2px;
-}
-
-a.see:hover {
-  background-color: steelblue;
-}
-
-div.book {
-  position: relative;
-}
-
-div.bookText {
-  position: absolute;
-  top: 60px;
-  right: 55%;
-  width: 500px;
-  color: white;
-}
-
-h1.book {
-  margin: 20px 0;
-  font-size: 48px;
-}
-
-p.book {
-  font-size: 15px;
-  letter-spacing: .15em;
-  line-height: 1.4em;
-  margin-bottom: 40px;
-}
-
-a.book {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  height: 45px;
-  width: 350px;
-  color: white;
-  font-weight: bold;
-  letter-spacing: .1em;
-  background-color: dodgerblue;
-  border-radius: 2px;
-}
-
-a.book:hover {
-  background-color: steelblue;
-}
-
-p.bookSmall {
-  margin-top: 30px;
-  font-size: 13px;
+a:hover {
+	text-decoration: none;
 }
 
 div.footerTop, div.footerMid {
   display: flex;
   height: 80px;
   background-color: #333333;
-  padding: 0 20%;
+  padding: 0 75px;
 }
 
 div.footerTop {
   align-items: center;
+  justify-content: flex-start;
+}
+
+footer {
+	max-width: 1200px;
+	margin: auto;
 }
 
 a.footerTop, a.footerMid {
@@ -466,58 +310,13 @@ a.icons:hover {
   color: grey;
 }
 
-a {
-  text-decoration: none;
+div.mobileLogo {
+	height: 75px;
+	display: flex;
+	justify-content: center;
 }
 
-.short {
-  display: none;
+img.mobileLogo {
+	max-width: 80px;
+	margin: auto;
 }
-
-@media (max-width: 1200px) {
-
-  div.berryText, div.offersText, div.freshText {
-    left: 45%;
-  }
-
-  div.thirstText, div.thinkText, div.bookText {
-    right: 45%;
-  }
-
-  div.navTop, div.navBottom {
-    width: 900px;
-  }
-
-  .short {
-    display: inline-block;
-  }
-
-  .long {
-    display: none;
-  }
-}
-
-@media (max-width: 900px) {
-  div.navTop, div.navBottom {
-    width: 600px;
-  }
-
-  div.berryText, div.thirstText, div.offersText, div.thinkText, div.freshText, div.bookText {
-    position: static;
-    margin: auto;
-    width: 80%;
-  }
-
-  img.thirst, img.think, img.book {
-    float: right;
-  }
-
-  img.book {
-    height: 525px;
-  }
-
-  div.offersText, div.thinkText, div.bookText {
-    color: black;
-  }
-}
-
